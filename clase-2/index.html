@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html
+    lang="es"
+    dir="ltr"
+    class="documento-html"
+    id="raiz-html"
+    title="Documento HTML semántico"
+    data-version="1.0">
+    <!-- html: raíz del documento -->
+    <!-- lang: idioma principal -->
+    <!-- dir: dirección del texto -->
+    <!-- class / id: identificación para CSS o JS -->
+    <!-- title: información adicional -->
+    <!-- data-* : datos personalizados -->
+
+<head>
+    <!-- head: metadatos del documento -->
+
+    <meta charset="UTF-8">
+    <!-- meta con charset: codificación de caracteres -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta con name + content: configuración responsive -->
+
+    <meta name="description" content="Ejemplo completo de HTML semántico para clase">
+    <!-- meta con description: descripción del documento -->
+
+    <meta name="author" content="Cátedra Desarrollo Web">
+    <!-- meta con author: autor del documento -->
+
+    <meta name="keywords" content="html, semántica, etiquetas, atributos">
+    <!-- meta con keywords: palabras clave -->
+
+    <meta http-equiv="refresh" content="120">
+    <!-- meta con http-equiv: directiva del navegador -->
+
+    <title>Clase 2 - HTML Semántico</title>
+    <!-- title: título de la pestaña -->
+
+</head>
+
+<body
+    id="pagina"
+    class="pagina-principal"
+    lang="es"
+    title="Cuerpo del documento"
+    data-seccion="inicio">
+    <!-- body: todo el contenido visible -->
+
+    <header
+        id="encabezado"
+        class="site-header"
+        title="Encabezado principal"
+        data-rol="header">
+        <!-- header: contenido introductorio -->
+
+        <h1 id="titulo-principal" class="titulo">Portal de Noticias Tech</h1>
+        <p id="bajada" class="descripcion">
+            Actualidad sobre desarrollo web y buenas prácticas en
+            <strong id="texto-destacado" class="resaltado">HTML semántico</strong>.
+        </p>
+    </header>
+
+    <nav
+        id="navegacion"
+        class="menu-principal"
+        aria-label="Navegación principal"
+        title="Menú principal">
+        <!-- nav: bloque de navegación -->
+
+        <a
+            id="link-inicio"
+            class="enlace-menu"
+            href="#inicio"
+            target="_self"
+            rel="bookmark"
+            hreflang="es"
+            type="text/html"
+            referrerpolicy="no-referrer"
+            title="Ir al inicio">
+            Inicio
+        </a>
+
+        <a
+            id="link-noticias"
+            class="enlace-menu"
+            href="#noticias"
+            target="_self"
+            rel="bookmark"
+            hreflang="es"
+            type="text/html"
+            title="Ir a noticias">
+            Noticias
+        </a>
+
+        <a
+            id="link-mdn"
+            class="enlace-menu"
+            href="https://developer.mozilla.org/"
+            target="_blank"
+            rel="noopener noreferrer external"
+            hreflang="en"
+            type="text/html"
+            referrerpolicy="strict-origin-when-cross-origin"
+            title="Abrir MDN en nueva pestaña">
+            MDN
+        </a>
+    </nav>
+
+    <main
+        id="inicio"
+        class="contenido-principal"
+        title="Contenido principal"
+        data-layout="principal">
+        <!-- main: contenido principal único del documento -->
+
+        <section
+            id="noticias"
+            class="bloque-noticias"
+            aria-labelledby="titulo-noticias"
+            title="Sección de noticias">
+            <!-- section: sección temática -->
+
+            <h2 id="titulo-noticias">Últimas noticias</h2>
+
+            <article
+                id="articulo-html"
+                class="noticia"
+                aria-labelledby="titulo-articulo-1"
+                title="Artículo sobre HTML semántico">
+                <!-- article: contenido independiente -->
+
+                <header class="encabezado-articulo">
+                    <h3 id="titulo-articulo-1">La importancia de usar etiquetas semánticas</h3>
+                    <p>
+                        Publicado el
+                        <time
+                            datetime="2026-04-12"
+                            title="Fecha de publicación">
+                            12 de abril de 2026
+                        </time>
+                    </p>
+                </header>
+
+                <p>
+                    HTML define la estructura y el significado del contenido.
+                    Usar etiquetas con semántica ayuda a la accesibilidad y al mantenimiento del código.
+                </p>
+
+                <figure
+                    id="figura-html"
+                    class="imagen-articulo"
+                    title="Imagen ilustrativa">
+                    <!-- figure: contenido autónomo ilustrativo -->
+
+                    <img
+                        id="imagen-html"
+                        class="imagen"
+                        src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+                        alt="Ilustración sobre estructura HTML"
+                        width="600"
+                        height="300"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="no-referrer"
+                        crossorigin="anonymous"
+                        title="Imagen de ejemplo">
+                    <!-- img: imagen -->
+                    <!-- src: ruta -->
+                    <!-- alt: texto alternativo -->
+                    <!-- width / height: dimensiones -->
+                    <!-- loading: carga diferida -->
+                    <!-- decoding: modo de decodificación -->
+                    <!-- referrerpolicy / crossorigin: política de solicitud -->
+
+                    <figcaption id="caption-html">
+                        Ejemplo visual de contenido acompañado por una descripción.
+                    </figcaption>
+                    <!-- figcaption: leyenda de la figura -->
+                </figure>
+
+                <p>
+                    Más información en
+                    <a
+                        href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics"
+                        target="_blank"
+                        rel="noopener noreferrer external"
+                        hreflang="en"
+                        type="text/html"
+                        title="Leer sobre semántica en MDN">
+                        esta referencia
+                    </a>.
+                </p>
+
+                <footer class="pie-articulo">
+                    <address id="autor-articulo" class="firma">
+                        Redacción Web - Facultad de Ingeniería
+                    </address>
+                    <!-- address: información de contacto o autoría -->
+                </footer>
+            </article>
+
+            <article
+                id="articulo-section"
+                class="noticia"
+                aria-labelledby="titulo-articulo-2"
+                title="Artículo sobre section y article">
+                <header class="encabezado-articulo">
+                    <h3 id="titulo-articulo-2">Cuándo usar section y cuándo usar article</h3>
+                </header>
+
+                <p>
+                    <strong>section</strong> agrupa contenido relacionado,
+                    mientras que <strong>article</strong> representa una pieza de contenido independiente.
+                </p>
+            </article>
+        </section>
+
+        <aside
+            id="barra-lateral"
+            class="contenido-secundario"
+            aria-labelledby="titulo-aside"
+            title="Contenido complementario">
+            <!-- aside: contenido secundario o complementario -->
+
+            <h2 id="titulo-aside">Dato extra</h2>
+            <p>
+                Un documento bien estructurado suele ser más fácil de interpretar por navegadores,
+                lectores de pantalla y buscadores.
+            </p>
+        </aside>
+    </main>
+
+    <footer
+        id="pie-pagina"
+        class="site-footer"
+        title="Pie del sitio"
+        data-rol="footer">
+        <!-- footer: pie de la página o sección -->
+
+        <p>&copy; 2026 - Portal de Noticias Tech</p>
+        <address id="contacto-general">
+            contacto@ejemplo.com
+        </address>
+    </footer>
+
+</body>
+</html>
