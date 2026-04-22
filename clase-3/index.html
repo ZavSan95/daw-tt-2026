@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Completo Inputs</title>
+</head>
+<body>
+
+<form action="#" method="POST" enctype="multipart/form-data">
+
+    <fieldset>
+        <legend>Inputs básicos</legend>
+
+        <!-- TEXT -->
+        <label>Texto:</label>
+        <input type="text" name="texto" placeholder="Ingrese texto"><br><br>
+
+        <!-- PASSWORD -->
+        <label>Contraseña:</label>
+        <input type="password" name="password"><br><br>
+
+        <!-- EMAIL -->
+        <label>Email:</label>
+        <input type="email" name="email"><br><br>
+
+        <!-- NUMBER -->
+        <label>Número:</label>
+        <input type="number" name="numero" min="0" max="100"><br><br>
+
+        <!-- TEL -->
+        <label>Teléfono:</label>
+        <input type="tel" name="telefono"><br><br>
+
+        <!-- URL -->
+        <label>URL:</label>
+        <input type="url" name="web"><br><br>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Inputs de fecha y tiempo</legend>
+
+        <!-- DATE -->
+        <label>Fecha:</label>
+        <input type="date" name="fecha"><br><br>
+
+        <!-- TIME -->
+        <label>Hora:</label>
+        <input type="time" name="hora"><br><br>
+
+        <!-- DATETIME-LOCAL -->
+        <label>Fecha y hora:</label>
+        <input type="datetime-local" name="fecha_hora"><br><br>
+
+        <!-- MONTH -->
+        <label>Mes:</label>
+        <input type="month" name="mes"><br><br>
+
+        <!-- WEEK -->
+        <label>Semana:</label>
+        <input type="week" name="semana"><br><br>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Selección</legend>
+
+        <!-- RADIO -->
+        <label>Sexo:</label>
+        <input type="radio" name="sexo" value="M"> Masculino
+        <input type="radio" name="sexo" value="F"> Femenino
+        <br><br>
+
+        <label for="pais">País:</label>
+
+        <select name="pais" id="pais">
+            <option value="arg">Argentina</option>
+            <option value="chi">Chile</option>
+            <option value="esp">España</option>
+        </select>
+        <br><br>
+
+        <!-- CHECKBOX -->
+        <label>Intereses:</label><br>
+        <input type="checkbox" name="intereses" value="html"> HTML<br>
+        <input type="checkbox" name="intereses" value="css"> CSS<br>
+        <input type="checkbox" name="intereses" value="js"> JavaScript<br><br>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Otros tipos</legend>
+
+        <!-- COLOR -->
+        <label>Color:</label>
+        <input type="color" name="color"><br><br>
+
+        <!-- RANGE -->
+        <label>Rango:</label>
+        <input type="range" name="rango" min="0" max="10"><br><br>
+
+        <!-- FILE -->
+        <label>Archivo:</label>
+        <input type="file" name="archivo"><br><br>
+
+        <!-- SEARCH -->
+        <label>Buscar:</label>
+        <input type="search" name="buscar"><br><br>
+
+        <input type="file" name="archivo">
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Inputs especiales</legend>
+
+        <!-- HIDDEN -->
+        <input type="hidden" name="usuario_id" value="123">
+        <!-- No se ve, se envía oculto -->
+
+        <!-- READONLY -->
+        <label>Solo lectura:</label>
+        <input type="text" value="No editable" readonly><br><br>
+
+        <!-- DISABLED -->
+        <label>Deshabilitado:</label>
+        <input type="text" value="Deshabilitado" disabled><br><br>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Botones</legend>
+
+        <!-- SUBMIT -->
+        <input type="submit" value="Enviar">
+
+        <!-- RESET -->
+        <input type="reset" value="Limpiar">
+
+        <!-- BUTTON -->
+        <input type="button" value="Botón normal">
+
+    </fieldset>
+
+</form>
+
+</body>
+</html>

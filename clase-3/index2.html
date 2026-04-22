@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Listas y Tablas - Explicado</title>
+</head>
+<body>
+
+    <h1>Listas y Tablas en HTML</h1>
+
+    <!-- ===================================== -->
+    <!-- LISTAS -->
+    <!-- ===================================== -->
+
+    <h2>Lista no ordenada (ul)</h2>
+
+    <!-- 
+        DIFERENCIA:
+        - Se usa cuando el ORDEN NO IMPORTA
+        - Muestra viñetas (•)
+        - Ejemplo: tecnologías, ingredientes, categorías
+    -->
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+
+    <h2>Lista ordenada (ol)</h2>
+
+    <!-- 
+        DIFERENCIA:
+        - Se usa cuando el ORDEN SI IMPORTA
+        - Tiene numeración automática
+        - Ejemplo: pasos, instrucciones, ranking
+    -->
+    <ol>
+        <li>Encender computadora</li>
+        <li>Abrir navegador</li>
+        <li>Entrar a la web</li>
+    </ol>
+
+
+    <h2>Lista ordenada con atributos</h2>
+
+    <!-- 
+        DIFERENCIA:
+        - Permite personalizar la numeración
+        - type: cambia el formato (1, A, a, I, i)
+        - start: define desde dónde empieza
+    -->
+    <ol type="A" start="3">
+        <li>Paso uno</li>
+        <li>Paso dos</li>
+    </ol>
+
+
+    <h2>Lista de definición (dl)</h2>
+
+    <!-- 
+        DIFERENCIA:
+        - No es una lista común
+        - Se usa para DEFINIR conceptos
+        - dt = término
+        - dd = definición
+        - Ejemplo: diccionarios, glosarios
+    -->
+    <dl>
+        <dt>HTML</dt>
+        <dd>Lenguaje de marcado para la web</dd>
+
+        <dt>CSS</dt>
+        <dd>Lenguaje de estilos</dd>
+    </dl>
+
+
+    <h2>Lista anidada</h2>
+
+    <!-- 
+        DIFERENCIA:
+        - Permite crear jerarquías
+        - Una lista dentro de otra
+        - Ejemplo: categorías y subcategorías
+    -->
+    <ul>
+        <li>Frontend
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+        </li>
+        <li>Backend</li>
+    </ul>
+
+
+    <!-- ===================================== -->
+    <!-- TABLAS -->
+    <!-- ===================================== -->
+
+    <h2>Tabla básica</h2>
+
+    <!-- 
+        DIFERENCIA:
+        - Estructura simple
+        - Solo filas (tr), encabezados (th) y datos (td)
+        - No separa partes de la tabla
+    -->
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+        </tr>
+
+        <tr>
+            <td>Juan</td>
+            <td>25</td>
+        </tr>
+
+        <tr>
+            <td>Ana</td>
+            <td>30</td>
+        </tr>
+    </table>
+
+
+    <h2>Tabla estructurada (thead, tbody, tfoot)</h2>
+
+    <!-- 
+        DIFERENCIA:
+        - Separa la tabla en secciones
+        - thead: encabezado
+        - tbody: contenido principal
+        - tfoot: resumen o totales
+        - Mejora la organización, accesibilidad y SEO
+    -->
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Notebook</td>
+                <td>$1000</td>
+            </tr>
+
+            <tr>
+                <td>Mouse</td>
+                <td>$20</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>$1020</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+
+    <h2>Tabla con colspan</h2>
+
+    <!-- 
+        DIFERENCIA:
+        - Une columnas
+        - colspan="2" → ocupa 2 columnas
+        - Ejemplo: títulos generales
+    -->
+    <table border="1">
+        <tr>
+            <th colspan="2">Información</th>
+        </tr>
+
+        <tr>
+            <td>Nombre</td>
+            <td>Juan</td>
+        </tr>
+    </table>
+
+
+    <h2>Tabla con rowspan</h2>
+
+    <!-- 
+        DIFERENCIA:
+        - Une filas
+        - rowspan="2" → ocupa 2 filas
+        - Ejemplo: agrupar datos repetidos
+    -->
+    <table border="1">
+        <tr>
+            <th rowspan="2">Nombre</th>
+            <td>Juan</td>
+        </tr>
+
+        <tr>
+            <td>Ana</td>
+        </tr>
+    </table>
+
+
+</body>
+</html>
