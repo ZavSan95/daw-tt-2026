@@ -1,0 +1,78 @@
+/* Selector universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general del body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #0077cc;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Selector ID */
+#titulo {
+    font-size: 32px;
+}
+
+/* Selector clase */
+.subtitulo {
+    font-size: 16px;
+}
+
+/* Secciones */
+section {
+    background-color: white;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Selector descendente */
+section h2 {
+    margin-bottom: 10px;
+}
+
+/* Clase destacada */
+.destacado {
+    color: #0077cc;
+}
+
+/* Lista */
+ul {
+    margin-left: 20px;
+}
+
+/* Botón */
+button {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Hover (podés mostrarlo como bonus) */
+button:hover {
+    background-color: #005fa3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #222;
+    color: white;
+}

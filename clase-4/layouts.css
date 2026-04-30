@@ -1,0 +1,161 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    color: #333;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.encabezado {
+    background: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.encabezado h1 {
+    margin-bottom: 10px;
+}
+
+/* =========================
+   MENÚ
+========================= */
+
+.menu {
+    background: #457b9d;
+    text-align: center;
+    padding: 12px;
+}
+
+.menu a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    padding: 8px 12px;
+    background: #1d3557;
+    border-radius: 4px;
+}
+
+.menu a:hover {
+    background: #0b253f;
+}
+
+/* =========================
+   CONTENEDOR PRINCIPAL
+========================= */
+
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+}
+
+/* 
+   FLOAT:
+   Permite colocar elementos uno al lado del otro.
+*/
+
+.contenido-principal {
+    float: left;
+    width: 68%;
+    background: #f8f9fa;
+    padding: 20px;
+}
+
+.barra-lateral {
+    float: right;
+    width: 28%;
+    background: #e9ecef;
+    padding: 20px;
+}
+
+/* 
+   CLEAR:
+   Evita que el contenido siguiente se suba al lado
+   de los elementos flotantes.
+*/
+
+.limpiar {
+    clear: both;
+}
+
+/* =========================
+   NOTICIAS
+========================= */
+
+.noticia {
+    background: white;
+    margin-top: 15px;
+    padding: 15px;
+    border-left: 5px solid #457b9d;
+}
+
+.noticia h3 {
+    margin-bottom: 8px;
+}
+
+/* =========================
+   TARJETAS CON INLINE-BLOCK
+========================= */
+
+.tarjetas {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.tarjetas h2 {
+    margin-bottom: 20px;
+}
+
+/* 
+   INLINE-BLOCK:
+   Permite que las cajas se comporten como texto,
+   ubicándose una al lado de la otra.
+*/
+
+.tarjeta {
+    display: inline-block;
+    width: 30%;
+    min-height: 130px;
+    vertical-align: top;
+    margin: 1%;
+    padding: 20px;
+    background: #a8dadc;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.tarjeta h3 {
+    margin-bottom: 10px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.pie {
+    background: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}

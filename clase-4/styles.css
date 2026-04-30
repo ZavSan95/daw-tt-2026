@@ -1,0 +1,24 @@
+/* SELECTOR UNIVERSAL */
+* {
+    color: red;
+}
+
+/* SELECTOR DE ETIQUETA */
+p {
+    color: blue;
+}
+
+/* SELECTOR DESCENDENTE*/
+div p {
+    color: pink;
+}
+
+/* SELECTOR DE CLASE */
+.parrafo {
+    color: green;
+}
+
+/* SELECTOR DE ID */
+#parrafo {
+    color: yellow;
+}

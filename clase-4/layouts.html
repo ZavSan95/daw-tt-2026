@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Layouts sin Flexbox ni Grid</title>
+    <link rel="stylesheet" href="layouts.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <h1>Mi sitio web</h1>
+        <p>Ejemplo de layout usando CSS básico</p>
+    </header>
+
+    <nav class="menu">
+        <a href="#">Inicio</a>
+        <a href="#">Noticias</a>
+        <a href="#">Servicios</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <main class="contenedor">
+
+        <section class="contenido-principal">
+            <h2>Contenido principal</h2>
+
+            <article class="noticia">
+                <h3>Primera noticia</h3>
+                <p>
+                    Esta sección ocupa la mayor parte del ancho disponible.
+                    Aquí normalmente se ubica el contenido más importante.
+                </p>
+            </article>
+
+            <article class="noticia">
+                <h3>Segunda noticia</h3>
+                <p>
+                    Usamos márgenes, anchos y flotantes para construir una
+                    distribución básica sin utilizar Flexbox ni Grid.
+                </p>
+            </article>
+        </section>
+
+        <aside class="barra-lateral">
+            <h2>Barra lateral</h2>
+            <p>Este espacio puede contener publicidad, enlaces o información secundaria.</p>
+        </aside>
+
+        <div class="limpiar"></div>
+
+    </main>
+
+    <section class="tarjetas">
+        <h2>Sección de tarjetas</h2>
+
+        <div class="tarjeta">
+            <h3>HTML</h3>
+            <p>Estructura del contenido.</p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>CSS</h3>
+            <p>Estilos visuales.</p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>JavaScript</h3>
+            <p>Interactividad.</p>
+        </div>
+    </section>
+
+    <footer class="pie">
+        <p>© 2026 - Desarrollo Web</p>
+    </footer>
+
+</body>
+</html>

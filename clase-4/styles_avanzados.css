@@ -1,0 +1,404 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #111827;
+    color: white;
+}
+
+/* Contenedor general para mostrar todos los ejemplos */
+.demo-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.demo-title {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+.demo-section {
+    margin-bottom: 70px;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+
+/* =========================
+   1. BOTÓN NEÓN
+========================= */
+
+.btn-neon {
+    position: relative;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 30px;
+    background: #111;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.btn-neon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, #00eaff, transparent);
+    transition: 0.5s;
+}
+
+.btn-neon:hover::before {
+    left: 100%;
+}
+
+.btn-neon:hover {
+    box-shadow: 0 0 15px #00eaff, 0 0 40px #00eaff;
+}
+
+
+/* =========================
+   2. TARJETA 3D
+========================= */
+
+.card-3d {
+    width: 280px;
+    padding: 30px;
+    margin: 30px auto;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.card-3d h2 {
+    margin-bottom: 15px;
+}
+
+.card-3d p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.card-3d:hover {
+    transform: rotateY(15deg) rotateX(10deg) scale(1.05);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================
+   3. HERO CON BURBUJAS
+========================= */
+
+.hero {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+    padding-top: 170px;
+    border-radius: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 22px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero span {
+    position: absolute;
+    bottom: -100px;
+    width: 80px;
+    height: 80px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 50%;
+    animation: burbujas 8s linear infinite;
+}
+
+.hero span:nth-child(3) {
+    left: 20%;
+    animation-delay: 0s;
+}
+
+.hero span:nth-child(4) {
+    left: 40%;
+    animation-delay: 2s;
+    width: 120px;
+    height: 120px;
+}
+
+.hero span:nth-child(5) {
+    left: 60%;
+    animation-delay: 4s;
+}
+
+.hero span:nth-child(6) {
+    left: 80%;
+    animation-delay: 1s;
+    width: 50px;
+    height: 50px;
+}
+
+@keyframes burbujas {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-600px) scale(1.5);
+        opacity: 0;
+    }
+}
+
+
+/* =========================
+   4. TEXTO GRADIENTE
+========================= */
+
+.texto-gradient {
+    font-size: 50px;
+    text-align: center;
+    background: linear-gradient(90deg, #ff0080, #7928ca, #00eaff, #ff0080);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: moverGradiente 4s linear infinite;
+}
+
+@keyframes moverGradiente {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 300%;
+    }
+}
+
+
+/* =========================
+   5. LOADER
+========================= */
+
+.loader {
+    width: 70px;
+    height: 70px;
+    margin: 50px auto;
+    border: 8px solid #ddd;
+    border-top-color: #0077cc;
+    border-radius: 50%;
+    animation: girar 1s linear infinite;
+}
+
+@keyframes girar {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* =========================
+   6. TARJETA HOLOGRÁFICA
+========================= */
+
+.scene {
+    min-height: 600px;
+    display: grid;
+    place-items: center;
+    perspective: 1000px;
+    overflow: hidden;
+}
+
+.holo-card {
+    position: relative;
+    width: 360px;
+    height: 520px;
+    border-radius: 28px;
+    padding: 2px;
+    background: linear-gradient(
+        135deg,
+        #00f5ff,
+        #ff00e6,
+        #fff200,
+        #00ff85,
+        #00f5ff
+    );
+    background-size: 400%;
+    animation: borderMove 6s linear infinite;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+    box-shadow: 0 0 40px rgba(0, 245, 255, 0.3);
+}
+
+.holo-card:hover {
+    transform: rotateY(18deg) rotateX(10deg) scale(1.04);
+}
+
+.holo-card::before {
+    content: "";
+    position: absolute;
+    inset: -3px;
+    border-radius: 30px;
+    background: inherit;
+    filter: blur(25px);
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.holo-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 28px;
+    background: linear-gradient(
+        120deg,
+        transparent 20%,
+        rgba(255, 255, 255, 0.6) 45%,
+        transparent 70%
+    );
+    transform: translateX(-100%);
+    animation: shine 3s infinite;
+}
+
+.card-content {
+    position: relative;
+    height: 100%;
+    padding: 35px;
+    border-radius: 26px;
+    background:
+        linear-gradient(rgba(10, 10, 20, 0.85), rgba(10, 10, 20, 0.95)),
+        repeating-linear-gradient(
+            45deg,
+            rgba(255,255,255,0.04) 0px,
+            rgba(255,255,255,0.04) 2px,
+            transparent 2px,
+            transparent 8px
+        );
+    color: white;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.card-content::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: #00f5ff;
+    border-radius: 50%;
+    top: -50px;
+    right: -50px;
+    filter: blur(60px);
+    opacity: 0.45;
+}
+
+.card-content::after {
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    background: #ff00e6;
+    border-radius: 50%;
+    bottom: -40px;
+    left: -40px;
+    filter: blur(60px);
+    opacity: 0.45;
+}
+
+.card-content .tag,
+.card-content h1,
+.card-content p,
+.card-content button {
+    position: relative;
+    z-index: 2;
+}
+
+.card-content .tag {
+    display: inline-block;
+    margin-bottom: 80px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.12);
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.card-content h1 {
+    font-size: 42px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.card-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #d9e2ff;
+    margin-bottom: 35px;
+}
+
+.card-content button {
+    border: none;
+    padding: 14px 24px;
+    border-radius: 999px;
+    background: white;
+    color: #111;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card-content button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(255,255,255,0.25);
+}
+
+@keyframes borderMove {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+@keyframes shine {
+    0% {
+        transform: translateX(-120%);
+    }
+
+    45%, 100% {
+        transform: translateX(120%);
+    }
+}
