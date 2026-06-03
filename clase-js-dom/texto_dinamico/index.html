@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="tituloFormulario">HOLA</h2>
+
+    <input type="text" id="nombreCompleto" placeholder="Nombre completo">
+</body>
+</html>
+
+<script>
+    const tituloFormulario = document.querySelector("#tituloFormulario");
+    const nombreCompleto = document.querySelector("#nombreCompleto");
+
+    nombreCompleto.addEventListener("keydown", function() {
+        setTimeout(function() {
+            if (nombreCompleto.value.trim() !== "") {
+                tituloFormulario.textContent = "HOLA " + nombreCompleto.value.toUpperCase();
+            } else {
+                tituloFormulario.textContent = "HOLA";
+            }
+        }, 0);
+    });
+
+    nombreCompleto.addEventListener("focus", function() {
+        tituloFormulario.textContent = "HOLA";
+    });
+</script>

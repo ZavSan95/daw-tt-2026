@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+    line-height: 1.5;
+}
+
+.site-header {
+    background-color: #1f2937;
+    color: white;
+    padding: 20px 0;
+}
+
+.header-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.logo {
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.subscription-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+}
+
+#form-title {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #1f2937;
+}
+
+.form-intro {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input {
+    padding: 11px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.input-error {
+    border: 2px solid #dc2626;
+    background-color: #fff7f7;
+}
+
+.error-message {
+    min-height: 20px;
+    margin-top: 5px;
+    color: #dc2626;
+    font-size: 14px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.submit-button {
+    min-width: 180px;
+    padding: 13px 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1f2937;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #111827;
+}
+
+.site-footer {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+}
+
+/* Vista de escritorio: dos columnas */
+@media (min-width: 768px) {
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin-bottom: 0;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}

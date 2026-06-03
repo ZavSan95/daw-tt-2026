@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscripción - Diario Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+            <h1 class="logo">Diario Web</h1>
+            <nav class="main-nav">
+                <a href="#">Inicio</a>
+                <a href="#">Política</a>
+                <a href="#">Sociedad</a>
+                <a href="#">Deportes</a>
+                <a href="#">Tecnología</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="subscription-card">
+            <h2 id="form-title">HOLA</h2>
+            <p class="form-intro">
+                Completá tus datos para suscribirte al diario y recibir nuestras novedades.
+            </p>
+
+            <form id="subscription-form" novalidate>
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="fullName">Nombre completo</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Ej: Juan Pérez">
+                        <p class="error-message" id="error-fullName"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Ej: usuario@mail.com">
+                        <p class="error-message" id="error-email"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" name="password" placeholder="Mínimo 8 caracteres">
+                        <p class="error-message" id="error-password"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="repeatPassword">Repetir contraseña</label>
+                        <input type="password" id="repeatPassword" name="repeatPassword" placeholder="Repetir contraseña">
+                        <p class="error-message" id="error-repeatPassword"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Edad</label>
+                        <input type="number" id="age" name="age" placeholder="Ej: 25">
+                        <p class="error-message" id="error-age"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Teléfono</label>
+                        <input type="text" id="phone" name="phone" placeholder="Ej: 3415555555">
+                        <p class="error-message" id="error-phone"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Dirección</label>
+                        <input type="text" id="address" name="address" placeholder="Ej: San Martín 1234">
+                        <p class="error-message" id="error-address"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="city">Ciudad</label>
+                        <input type="text" id="city" name="city" placeholder="Ej: Rosario">
+                        <p class="error-message" id="error-city"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="postalCode">Código postal</label>
+                        <input type="text" id="postalCode" name="postalCode" placeholder="Ej: 2000">
+                        <p class="error-message" id="error-postalCode"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dni">DNI</label>
+                        <input type="text" id="dni" name="dni" placeholder="Ej: 12345678">
+                        <p class="error-message" id="error-dni"></p>
+                    </div>
+
+                </div>
+
+                <div class="button-container">
+                    <button type="submit" class="submit-button">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Diario Web - Actividad DOM JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
